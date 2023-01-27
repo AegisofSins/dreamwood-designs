@@ -1,0 +1,60 @@
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: inherit;
+    background-color: #000;
+}
+
+.logo {
+        display: flex;
+        align-self: center;
+        width: 100px;
+        height: 100px;
+        background-image: url(pictures/logo.jpg);
+        opacity: 0.80;
+        border-radius: 50%;
+        margin-left: 20px;
+}
+
+.topnav{
+    display: flex;
+    width: 15%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.topnav > a {
+    text-decoration: none;
+    font-size: larger;
+    color: #fefefe;
+    cursor: pointer;
+}
+
+.maintext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    width: inherit;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 49%, rgba(0,0,0,1) 100%),url(pictures/wood.jpg);
+    color: #fefefe;
+    font-size: 3rem;
+    font-weight: 700;
+    
+
+}
+
