@@ -1,4 +1,6 @@
-//Return to top button 
+
+//Return to top button + refresh
+window.scrollTo(0,0);
 var btn = $('#button');
 
 $(window).scroll(function() {
@@ -20,7 +22,7 @@ btn.on('click', function(e) {
 /*--------------------
 Vars
 --------------------*/
-let progress = 50
+let progress = 0
 let startX = 0
 let active = 0
 let isDown = false
@@ -72,11 +74,11 @@ $items.forEach((item, i) => {
 /*--------------------
 Handlers
 --------------------*/
-const handleWheel = e => {
-  const wheelProgress = e.deltaY * speedWheel
-  progress = progress + wheelProgress
-  animate()
-}
+// const handleWheel = e => {
+//   const wheelProgress = e.deltaY * speedWheel
+//   progress = progress + wheelProgress
+//   animate()
+// }
 
 const handleMouseMove = (e) => {
   if (e.type === 'mousemove') {
@@ -104,7 +106,7 @@ const handleMouseUp = () => {
 /*--------------------
 Listeners
 --------------------*/
-document.addEventListener('mousewheel', handleWheel)
+// document.addEventListener('mousewheel', handleWheel)
 document.addEventListener('mousedown', handleMouseDown)
 document.addEventListener('mousemove', handleMouseMove)
 document.addEventListener('mouseup', handleMouseUp)
